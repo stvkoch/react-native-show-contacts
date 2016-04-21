@@ -4,17 +4,7 @@ import React, {
 } from 'react-native';
 
 
-const COLORS_SCHEMA = {
-  NEUTRAL: '#FFFFFF',
-  DARK_PRIMARY: '#C2185B',
-  PRIMARY: '#E91E63',
-  LIGHT_PRIMARY: '#F8BBD0',
-  TEXT_ICONS: '#FFFFFF',
-  ACCENT: '#536DFE',
-  TEXT_PRIMARY: '#536DFE',
-  TEXT_SECUNDARY: '#727272',
-  DIVIDER: '#B6B6B6'
-};
+import COLORS_SCHEMA from './colors';
 
 // containers
 const container = {
