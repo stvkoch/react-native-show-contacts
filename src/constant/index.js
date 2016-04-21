@@ -10,3 +10,4 @@ export const REQUEST_LOGIN = 'REQUEST_LOGIN';
 export const RECEIVE_LOGIN = 'RECEIVE_LOGIN';
 
 export const OPEN = 'OPEN';
+export const FILTER = 'FILTER';

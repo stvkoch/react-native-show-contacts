@@ -1,13 +1,7 @@
 import React, {
-  AppRegistry,
-  Component,
-  StyleSheet,
-  Text,
-  View
+  AppRegistry
 } from 'react-native';
 
-
 import Lellol from './src/lellol';
-
 
 AppRegistry.registerComponent('sendSMS', () => Lellol );

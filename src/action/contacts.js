@@ -12,6 +12,11 @@ export function openContactsFromLocal() {
   return (dispatch)=>{
     dispatch(opening(true));
       Contacts.getAll((err, contacts)=>{
+        contacts = contacts.sort((a, b)=>{
+          if (a.givenName < b.givenName) return -1;
+          if (a.givenName > b.givenName) return 1;
+          return 0;
+        });
         dispatch(receiveContacts(contacts.filter(t => t.phoneNumbers.length > 0)))
         dispatch(opening(false));
       });
@@ -20,6 +25,5 @@ export function openContactsFromLocal() {
 
 
 export function receiveContacts(contacts) {
-  console.log(contacts);
     return {type: RECEIVE_CONTACTS, contacts};
 }
