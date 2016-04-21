@@ -11,3 +11,6 @@ Using
 For now only support android.
 see:
 https://github.com/stvkoch/react-native-show-contacts/blob/master/index.android.js
+
+
+![alt tag](https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/screen.png)
