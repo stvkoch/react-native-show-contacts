@@ -11,6 +11,22 @@ const container = {
   backgroundColor: COLORS_SCHEMA.NEUTRAL,
   flex: 1
 };
+const navBar = {
+  flexDirection: 'row',
+  padding: 12,
+  paddingTop: 7,
+  paddingBottom: 7,
+  backgroundColor: COLORS_SCHEMA.PRIMARY,
+};
+const navBarBtn = {
+  flex: 1,
+  opacity: 1,
+}
+const navBarImage = {
+  width: 40,
+  height: 40,
+
+};
 const header = {};
 const footer = {};
 const center = {
@@ -59,25 +75,19 @@ const rowText = {
 
 // for searchBar
 const searchBar = {
-  flexDirection: 'row',
-  padding: 12,
-  paddingTop: 7,
-  paddingBottom: 7,
-  backgroundColor: COLORS_SCHEMA.PRIMARY
+  ...navBar,
 }
 const searchBarText = {
-  flex: 5,
+  flex: 6,
   color: COLORS_SCHEMA.TEXT_ICONS,
   fontSize: 20,
   padding: 3,
 };
 const searchBarBtn = {
-  flex: 1
+  ...navBarBtn
 };
 const searchBarImage = {
-  width: 40,
-  height: 40,
-  margin: 7,
+  ...navBarImage,
 }
 
 // for contact list items
@@ -92,8 +102,21 @@ const givenName = {
 
 };
 
+// for detail
+const detailContactImage = {
+  position: 'relative'
+}
+const detailImage = {
+  position: 'absolute',
+}
+const detailContactName = {}
+
+
 export default styles = StyleSheet.create({
   container,
+  navBar,
+  navBarBtn,
+  navBarImage,
   header,
   footer,
   btn,
@@ -113,4 +136,7 @@ export default styles = StyleSheet.create({
   searchBarText,
   searchBarBtn,
   searchBarImage,
+  detailContactImage,
+  detailImage,
+  detailContactName,
 });

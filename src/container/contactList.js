@@ -5,10 +5,12 @@ import React, {
   ListView,
 } from 'react-native';
 import { connect } from 'react-redux';
+import { Actions } from "react-native-router-flux";
+
 
 //actions
-import {openContactsFromLocal} from '../action/contacts';
-import {addFilter} from '../action/filter'
+import { openContactsFromLocal } from '../action/contacts';
+import { addFilter } from '../action/filter'
 //style
 import styles from '../styles';
 
@@ -52,8 +54,9 @@ const mapDispatchToProps = (dispatch) => {
     openContacts: ()=>{
       return dispatch(openContactsFromLocal());
     },
-    openDetailContact: (contactID)=>{
-      console.log('contactID', contactID);
+    openDetailContact: (contact)=>{
+      console.log('contactID', contact);
+      Actions.ContactDetail({ contact: contact });
     },
     filterContacts: (txt) => {
       dispatch(addFilter(txt));
@@ -62,7 +65,7 @@ const mapDispatchToProps = (dispatch) => {
   };
 }
 
-
+// data source used by ListView
 const ds = new ListView.DataSource({
   rowHasChanged: (row1, row2) => row1 !== row2,
 });
@@ -73,6 +76,7 @@ class ContactList extends Component {
     this.props.openContacts();
   }
 
+  // when
   renderSpinner() {
       return (
         <Spin />
@@ -80,7 +84,7 @@ class ContactList extends Component {
   }
 
   renderRow(row) {
-    return (<Row row={row} onClick={this.props.openDetailContact} />)
+    return (<Row row={row} onPressOpenDetail={this.props.openDetailContact} />)
   }
 
   renderList() {

@@ -10,33 +10,25 @@ import styles from '../styles';
 /*
 <Row row={row} onPressRow={....}/>
 */
-class Row extends Component {
+class Detail extends Component {
 
   render() {
     let unknowImage   = require('../assets/imgs/ic_contact_phone_black.png');
     let sendIconImage = require('../assets/imgs/ic_message_black.png');
 
-    return (<View style={styles.row}>
-        <View style={styles.rowImg}>
-            <Image source={unknowImage} style={styles.rowImageIco}/>
+    return (<View>
+        <View style={styles.detailContactImage}>
+            <Image source={unknowImage} style={styles.detailImage}>
+              <Text style={styles.detailContactName}>
+              </Text>
+            </Image>
         </View>
-        <View style={styles.rowText}>
-          <View style={styles.rowFamilyName}>
-            <Text style={styles.givenName}>
-              {this.props.row.givenName}
-            </Text>
-          </View>
-          <View style={styles.rowGivenName}>
-            <Text style={styles.familyName}>
-              {this.props.row.familyName}
-            </Text>
-          </View>
-        </View>
-        <View styles={styles.rowCommand}>
+        <View style={styles.detailCommands}>
+          
         </View>
     </View>);
     }
 
 }
 
-  export default Row;
+  export default Detail;

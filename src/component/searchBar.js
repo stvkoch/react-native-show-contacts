@@ -40,6 +40,7 @@ class SearchBar extends Component {
         <TouchableHighlight
           onPress={this.onPressCleanTextInput.bind(this)}
           style={styles.searchBarBtn}
+          activeOpacity={1}
           >
           <Image
             source={this.state.text ? imageCleanButton : imageSearchButton}
