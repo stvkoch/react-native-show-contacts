@@ -15,9 +15,6 @@ https://github.com/stvkoch/react-native-show-contacts/blob/master/index.android.
 <img src="https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/contactList.png" alt="alt tag" width="250">
 <img src="https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/contactDetail.png" alt="alt tag" width="250">
 
-![alt tag](https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/contactList.png =250x)
-![alt tag](https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/contactDetail.png =250x)
-
 
 
 ## Useful _adb_ commands:
