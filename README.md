@@ -13,7 +13,8 @@ see:
 https://github.com/stvkoch/react-native-show-contacts/blob/master/index.android.js
 
 
-![alt tag](https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/screen.png)
+![alt tag](https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/contactList.png =250x)
+![alt tag](https://raw.githubusercontent.com/stvkoch/react-native-show-contacts/master/contactDetail.png =250x)
 
 
 
@@ -28,15 +29,15 @@ Capture screenshot:
 Kill app:
 
 	adb shell am force-stop com.sendsms
-	
+
 Show proccess:
 
 	adb shell ps
-	
+
 Map localhost port to mobile port
-	
+
 	adb reverse tcp:8081 tcp:8081
-	
+
 
 
 Show log:

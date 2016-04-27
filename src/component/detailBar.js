@@ -2,7 +2,7 @@
 import React, {
   Component,
   View,
-  TextInput,
+  Text,
   TouchableHighlight,
   Image,
 } from 'react-native';
@@ -14,11 +14,16 @@ import styles from '../styles';
 <SearchBar onPressSearchBar={(text)=>{...}} />
 */
 class DetailBar extends Component {
+  getContactName() {
+    let giveName = this.props.contact.givenName || '';
+    let familyName = this.props.contact.familyName || '';
+    return `${giveName} ${familyName}`;
+  }
   render() {
     const imageChevronLeft = require('../assets/imgs/ic_chevron_left_white.png');
     const imageCall = require('../assets/imgs/ic_call_white.png');
-    const imageSMS = require('../assets/imgs/ic_textsms_white.png');
-
+    const imageSMS = require('../assets/imgs/ic_sms_white.png');
+    let contactName = `${this.props.contact.givenName} ${this.props.contact.familyName}`;
     return (
       <View style={styles.navBar}>
         <TouchableHighlight
@@ -31,26 +36,7 @@ class DetailBar extends Component {
             style={styles.navBarImage}
           />
         </TouchableHighlight>
-        <TouchableHighlight
-          onPress={this.props.onPressSendSMS}
-          style={styles.navBarBtn}
-          activeOpacity={1}
-          >
-          <Image
-            source={imageSMS}
-            style={styles.navBarImage}
-          />
-        </TouchableHighlight>
-        <TouchableHighlight
-          onPress={this.props.onPressCall}
-          style={styles.navBarBtn}
-          activeOpacity={1}
-          >
-          <Image
-            source={imageCall}
-            style={styles.navBarImage}
-          />
-        </TouchableHighlight>
+        <Text style={styles.navBarTitle}>{this.getContactName()}</Text>
       </View>
     );
   }

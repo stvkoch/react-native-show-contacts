@@ -8,20 +8,25 @@ import COLORS_SCHEMA from './colors';
 
 // containers
 const container = {
-  backgroundColor: COLORS_SCHEMA.NEUTRAL,
-  flex: 1
+  flex: 1,
 };
 const navBar = {
   flexDirection: 'row',
   padding: 12,
-  paddingTop: 7,
-  paddingBottom: 7,
+  paddingTop: 10,
+  paddingBottom: 10,
   backgroundColor: COLORS_SCHEMA.PRIMARY,
 };
 const navBarBtn = {
   flex: 1,
   opacity: 1,
 }
+const navBarTitle = {
+  color: COLORS_SCHEMA.NEUTRAL,
+  fontSize: 20,
+  marginTop: 5,
+  flex: 7,
+};
 const navBarImage = {
   width: 40,
   height: 40,
@@ -104,19 +109,58 @@ const givenName = {
 
 // for detail
 const detailContactImage = {
-  position: 'relative'
 }
+const detailContactNumber = {
+  borderBottomColor: COLORS_SCHEMA.PRIMARY,
+  padding: 20,
+};
 const detailImage = {
-  position: 'absolute',
+  margin: 10,
+  alignSelf: 'center',
+  flex: 1,
+  opacity: 0.5,
 }
-const detailContactName = {}
+const detailContactName = {
+  fontSize: 20,
+}
+const detailCommands = {
+  position: 'absolute',
+  left: 0,
+  bottom: 0,
+  flexDirection: 'row',
+};
+const circle = {
+  width: 60,
+  height: 60,
+}
+const bnt = {
+  margin: 40,
+  padding: 20,
+  borderRadius: 100,
+  flex: 1,
+}
+const callBnt = {
+  ...bnt,
+  backgroundColor: 'green',
+};
+const smsBnt = {
+  ...bnt,
+  backgroundColor: COLORS_SCHEMA.ACCENT,
+};
 
+const card = {
+  margin: 10,
+  backgroundColor: COLORS_SCHEMA.NEUTRAL,
+
+};
+const cardItem = {};
 
 export default styles = StyleSheet.create({
   container,
   navBar,
   navBarBtn,
   navBarImage,
+  navBarTitle,
   header,
   footer,
   btn,
@@ -139,4 +183,11 @@ export default styles = StyleSheet.create({
   detailContactImage,
   detailImage,
   detailContactName,
+  detailCommands,
+  detailContactNumber,
+  card,
+  cardItem,
+  callBnt,
+  smsBnt,
+  circle,
 });

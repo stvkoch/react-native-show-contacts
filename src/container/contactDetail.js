@@ -36,14 +36,12 @@ const mapDispatchToProps = (dispatch) => {
 
 // definition of container
 class ContactDetail extends Component {
-  componentDidMount(){
-    console.log('Contact Detail', this.props);
-  }
 
   render() {
     return (
       <View style={styles.container}>
         <DetailBar
+          contact={this.props.contact}
           onPressBack={this.props.onPressBack}
           onPressCall={this.props.onPressCall}
           onPressSendSMS={this.props.onPressSendSMS}/>
