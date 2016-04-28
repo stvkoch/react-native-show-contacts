@@ -15,7 +15,7 @@ export default class LellolRoutes extends Component {
     render(){
         return <Router>
             <Scene key="root" tabs={false} hideNavBar={true}>
-                <Scene key="ContactList" initial={true} component={ContactList}  hideNavBar={true}/>
+                <Scene key="ContactList" initial={true} component={ContactList} />
                 <Scene key="ContactDetail" component={ContactDetail} />
             </Scene>
         </Router>
