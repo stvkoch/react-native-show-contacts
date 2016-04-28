@@ -1,4 +1,4 @@
-package com.sendsms;
+package com.lellol.conct;
 
 import com.facebook.react.ReactActivity;
 import com.rt2zz.reactnativecontacts.ReactNativeContacts;

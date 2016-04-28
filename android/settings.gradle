@@ -1,4 +1,4 @@
-rootProject.name = 'sendSMS'
+rootProject.name = 'CONCT'
 
 include ':app'
 include ':react-native-contacts'

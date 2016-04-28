@@ -28,7 +28,7 @@ Capture screenshot:
 
 Kill app:
 
-	adb shell am force-stop com.sendsms
+	adb shell am force-stop com.lellol.conct
 
 Show proccess:
 
@@ -44,4 +44,4 @@ Show log:
 
 	adb logcat '*:S' ReactNative:V ReactNativeJS:V
 
-	adb logcat com.sendsms:I 89c3d001|grep skoch -B 10 -A 10
+	adb logcat com.lellol.conct:I 89c3d001|grep skoch -B 10 -A 10
