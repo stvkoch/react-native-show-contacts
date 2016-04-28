@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "^0.14.8",
     "react-native": "^0.24.1",
+    "react-native-communications": "^1.0.1",
     "react-native-contacts": "^0.2.4",
     "react-native-router-flux": "^3.22.1",
     "react-native-spinkit": "0.0.10",

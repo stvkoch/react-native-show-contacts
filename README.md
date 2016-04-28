@@ -6,6 +6,7 @@ Using
 - React-Redux
 - React-Native-Router-Flux
 - React-Native-Contact
+- React-Native-Communications
 
 
 For now only support android.

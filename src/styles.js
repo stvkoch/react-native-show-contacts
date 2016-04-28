@@ -113,6 +113,7 @@ const detailContactImage = {
 const detailContactNumber = {
   borderBottomColor: COLORS_SCHEMA.PRIMARY,
   padding: 20,
+  marginBottom: 10,
 };
 const detailImage = {
   margin: 10,
@@ -129,6 +130,14 @@ const detailCommands = {
   bottom: 0,
   flexDirection: 'row',
 };
+
+const numberSelected = {
+  backgroundColor: COLORS_SCHEMA.LIGHT_PRIMARY
+};
+const numberUnselected = {
+  backgroundColor: COLORS_SCHEMA.NEUTRAL
+};
+
 const circle = {
   width: 60,
   height: 60,
@@ -141,7 +150,7 @@ const bnt = {
 }
 const callBnt = {
   ...bnt,
-  backgroundColor: 'green',
+  backgroundColor: COLORS_SCHEMA.CALL,
 };
 const smsBnt = {
   ...bnt,
@@ -150,7 +159,6 @@ const smsBnt = {
 
 const card = {
   margin: 10,
-  backgroundColor: COLORS_SCHEMA.NEUTRAL,
 
 };
 const cardItem = {};
@@ -185,6 +193,8 @@ export default styles = StyleSheet.create({
   detailContactName,
   detailCommands,
   detailContactNumber,
+  numberSelected,
+  numberUnselected,
   card,
   cardItem,
   callBnt,
